@@ -1,0 +1,183 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;background: linear-gradient(-45deg, #193642, #2b4c58, #335e71, #272626);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #00ffea;
+  transition: background-color 0.5s, color 0.5s;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#main-navbar .nav-link:hover,
+#main-navbar .nav-link:focus,
+#main-navbar .nav-link.active {
+  color: #00ffa0;
+  text-shadow: 0 0 12px #00ffa0;
+}
+/* Botão toggler (menu mobile) com efeito neon */
+#main-navbar .navbar-toggler {
+  border-color: #00ff90;
+}
+#main-navbar .navbar-toggler-icon {
+  filter: drop-shadow(0 0 2px #00ff90);
+}
+/* Botão toggler ao focar/hover */
+#main-navbar .navbar-toggler:focus,
+#main-navbar .navbar-toggler:hover {
+  box-shadow: 0 0 8px #00ff90;
+  border-color: #00ff90;
+}
+#carouselExampleDark {
+    width: 100vw;
+    max-height: 500px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 25px #00ffea88;
+    position: relative;
+  }
+  
+  /* Imagens com zoom suave no hover */
+  #carouselExampleDark .carousel-inner img {
+    width: 100vw;
+    height: 500px;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+    border-radius: 15px;
+  }
+  
+  #carouselExampleDark:hover .carousel-inner img {
+    transform: scale(1.05);
+  }
+  
+  /* Legendas com fundo translúcido e bordas arredondadas */
+  #carouselExampleDark .carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    padding: 1rem 1.5rem;
+    color: #00ffe0;
+    text-shadow: 0 0 8px #00ffe0;
+    max-width: 70%;
+    left: 15%;
+    bottom: 20px;
+    font-family: 'Consolas', monospace;
+    transition: background 0.3s ease;
+  }
+  
+  /* Indicadores personalizados */
+  #carouselExampleDark .carousel-indicators [data-bs-target] {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #00ffea88;
+    border: 2px solid #00ffea;
+    margin: 0 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #carouselExampleDark .carousel-indicators .active {
+    background-color: #00ffea;
+    box-shadow: 0 0 8px #00ffea;
+  }
+  
+  /* Setas de navegação estilizadas */
+  #carouselExampleDark .carousel-control-prev-icon,
+  #carouselExampleDark .carousel-control-next-icon {
+    filter: drop-shadow(0 0 3px #00ffea);
+    background-color: rgba(0, 255, 234, 0.7);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  #carouselExampleDark .carousel-control-prev-icon:hover,
+  #carouselExampleDark .carousel-control-next-icon:hover {
+    background-color: #00ffea;
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 10px #00ffea);
+  }
+  
+  /* Cursor pointer para controles */
+  #carouselExampleDark .carousel-control-prev,
+  #carouselExampleDark .carousel-control-next {
+    cursor: pointer;
+  }
+  
+
+#main-navbar {
+    width: 100vw;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 1030;
+  }
+  
+main {
+  flex: 1 0 auto; /* faz o main crescer para ocupar o espaço disponível */
+}
+footer {
+  flex-shrink: 0; /* evita que o footer encolha */
+}
+
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease forwards;
+}
+@keyframes fadeInAnimation {
+to {
+    opacity: 1;
+}
+}
+.card {
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+transform: translateY(-10px);
+box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+.tech-card {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #00ffea;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #00ffea88;
+    font-family: 'Consolas', 'Courier New', monospace;
+    border: 2px solid #00ffea;
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .tech-card h5, .tech-card h4 {
+    color: #00ffc8;
+    text-shadow: 0 0 8px #00ffc8;
+  }
+  .tech-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    white-space: pre-wrap; 
+    min-height: 120px; 
+  }
+  #typing-text::after {
+    content: '|';
+    animation: blink 1s infinite;
+  }
+  #typing-text{
+    color:#ffffff
+  }
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
