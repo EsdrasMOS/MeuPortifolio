@@ -170,8 +170,8 @@ footer {
 .skills-card img.card-img-top {
   width: 100% !important;
   height: 150px !important;
-  max-width: 100% !important;
-  max-height: 200px !important;
+  max-width: 130% !important;
+  max-height: 100px !important;
   object-fit: cover !important;
   object-position: center !important;
   border-radius: 12px 12px 0 0 !important;
