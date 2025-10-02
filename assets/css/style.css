@@ -20,14 +20,12 @@ body {
   color: #00ffa0;
   text-shadow: 0 0 12px #00ffa0;
 }
-/* Botão toggler (menu mobile) com efeito neon */
 #main-navbar .navbar-toggler {
   border-color: #00ff90;
 }
 #main-navbar .navbar-toggler-icon {
   filter: drop-shadow(0 0 2px #00ff90);
 }
-/* Botão toggler ao focar/hover */
 #main-navbar .navbar-toggler:focus,
 #main-navbar .navbar-toggler:hover {
   box-shadow: 0 0 8px #00ff90;
@@ -41,8 +39,6 @@ body {
   box-shadow: 0 0 25px #00ffea88;
   position: relative;
 }
-
-/* Imagens com zoom suave no hover */
 #carouselExampleDark .carousel-inner img {
   width: 100vw;
   height: 500px;
@@ -50,12 +46,9 @@ body {
   transition: transform 0.6s ease;
   border-radius: 15px;
 }
-
 #carouselExampleDark:hover .carousel-inner img {
   transform: scale(1.05);
 }
-
-/* Legendas com fundo translúcido e bordas arredondadas */
 #carouselExampleDark .carousel-caption {
   background: rgba(0, 0, 0, 0.6);
   border-radius: 15px;
@@ -68,8 +61,6 @@ body {
   font-family: 'Consolas', monospace;
   transition: background 0.3s ease;
 }
-
-/* Indicadores personalizados */
 #carouselExampleDark .carousel-indicators [data-bs-target] {
   width: 14px;
   height: 14px;
@@ -79,13 +70,10 @@ body {
   margin: 0 6px;
   transition: background-color 0.3s ease;
 }
-
 #carouselExampleDark .carousel-indicators .active {
   background-color: #00ffea;
   box-shadow: 0 0 8px #00ffea;
 }
-
-/* Setas de navegação estilizadas */
 #carouselExampleDark .carousel-control-prev-icon,
 #carouselExampleDark .carousel-control-next-icon {
   filter: drop-shadow(0 0 3px #00ffea);
@@ -95,20 +83,16 @@ body {
   height: 45px;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
 #carouselExampleDark .carousel-control-prev-icon:hover,
 #carouselExampleDark .carousel-control-next-icon:hover {
   background-color: #00ffea;
   transform: scale(1.15);
   filter: drop-shadow(0 0 10px #00ffea);
 }
-
-/* Cursor pointer para controles */
 #carouselExampleDark .carousel-control-prev,
 #carouselExampleDark .carousel-control-next {
   cursor: pointer;
 }
-
 #main-navbar {
   width: 100vw;
   position: relative;
@@ -116,14 +100,12 @@ body {
   top: 0;
   z-index: 1030;
 }
-
 main {
-  flex: 1 0 auto; /* faz o main crescer para ocupar o espaço disponível */
+  flex: 1 0 auto;
 }
 footer {
-  flex-shrink: 0; /* evita que o footer encolha */
+  flex-shrink: 0;
 }
-
 .fade-in {
   opacity: 0;
   animation: fadeInAnimation 1s ease forwards;
@@ -158,8 +140,8 @@ footer {
 .tech-card p {
   font-size: 1.1rem;
   line-height: 1.6;
-  white-space: pre-wrap; 
-  min-height: 120px; 
+  white-space: pre-wrap;
+  min-height: 120px;
 }
 #typing-text::after {
   content: '|';
@@ -168,54 +150,44 @@ footer {
 #typing-text {
   color: #ffffff;
 }
-
-/* Padronização dos cards de habilidades com tema cinza moderno e tamanho fixo */
 .skills-card {
-  height: 450px; /* Altura fixa para todos os cards */
+  height: 450px;
   display: flex;
   flex-direction: column;
-  background-color: #f8f9fa; /* Fundo cinza claro moderno (quase branco, mas com tom neutro) */
-  border: 1px solid #dee2e6; /* Borda sutil em cinza médio para definição */
-  border-radius: 12px; /* Bordas mais arredondadas para um look contemporâneo */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidade moderna */
-  transition: box-shadow 0.3s ease; /* Transição suave para hover (opcional) */
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
 }
-
 .skills-card:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Efeito hover: sombra maior para interatividade */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
-
 .skills-card .card-img-top {
-  width: 100%; /* Preenche toda a largura do card */
-  height: 150px; /* Altura fixa para uniformidade das imagens */
-  object-fit: cover; /* Enquadra a imagem: cobre a área, cortando se necessário, sem distorcer */
-  border-radius: 12px 12px 0 0; /* Bordas arredondadas no topo para um efeito de quadro */
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
 }
-
 .skills-card .card-body {
-  flex-grow: 1; /* Faz o body ocupar o espaço restante */
-  overflow: auto; /* Permite rolagem se o texto for muito longo */
-  padding: 1rem; /* Mantém o padding padrão do Bootstrap */
-  color: #212529; /* Texto escuro para contraste alto no fundo cinza */
+  flex-grow: 1;
+  overflow: auto;
+  padding: 1rem;
+  color: #212529;
 }
-
 .skills-card .card-title {
-  color: #495057; /* Título em cinza médio-escuro para hierarquia visual moderna */
+  color: #495057;
 }
-
-/* Ajuste para telas menores */
 @media (max-width: 768px) {
   .skills-card {
-    height: 400px; /* Altura fixa menor em mobile */
-    border-radius: 8px; /* Bordas menores em mobile */
+    height: 400px;
+    border-radius: 8px;
   }
-  
   .skills-card .card-img-top {
-    height: 120px; /* Altura fixa menor para imagens em mobile */
+    height: 120px;
     border-radius: 8px 8px 0 0;
   }
 }
-
 @keyframes gradientBG {
   0% {
     background-position: 0% 50%;
@@ -227,7 +199,6 @@ footer {
     background-position: 0% 50%;
   }
 }
-
 @keyframes blink {
   0%, 50% {
     opacity: 1;
