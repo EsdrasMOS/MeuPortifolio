@@ -169,6 +169,32 @@ box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
   #typing-text{
     color:#ffffff
   }
+
+  #skills-card {
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+}
+#skills-card .card-img-top {
+  height: 150px; 
+  object-fit: cover; 
+}
+#skills-card .card-body {
+  flex-grow: 1; 
+  overflow: auto; 
+  padding: 1rem; 
+}
+
+@media (max-width: 768px) {
+  .skills-card {
+    height: 400px; 
+  }
+  
+  .skills-card .card-img-top {
+    height: 120px;
+  }
+}
+
   @keyframes gradientBG {
     0% {
       background-position: 0% 50%;
