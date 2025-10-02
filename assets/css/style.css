@@ -169,49 +169,49 @@ footer {
   color: #ffffff;
 }
 
-/* Padronização dos cards de habilidades com tema cinza moderno */
+/* Padronização dos cards de habilidades com tema cinza moderno e tamanho fixo */
 .skills-card {
   height: 450px; /* Altura fixa para todos os cards */
   display: flex;
   flex-direction: column;
-  background-color: #f8f9fa; /* Fundo cinza claro moderno */
-  border: 1px solid #dee2e6; /* Borda sutil em cinza médio */
-  border-radius: 12px; /* Bordas arredondadas para um look contemporâneo */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidade */
-  transition: box-shadow 0.3s ease; /* Transição suave para hover */
+  background-color: #f8f9fa; /* Fundo cinza claro moderno (quase branco, mas com tom neutro) */
+  border: 1px solid #dee2e6; /* Borda sutil em cinza médio para definição */
+  border-radius: 12px; /* Bordas mais arredondadas para um look contemporâneo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidade moderna */
+  transition: box-shadow 0.3s ease; /* Transição suave para hover (opcional) */
 }
 
 .skills-card:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Efeito hover: sombra maior */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Efeito hover: sombra maior para interatividade */
 }
 
 .skills-card .card-img-top {
   width: 100%; /* Preenche toda a largura do card */
-  height: 150px; /* Altura fixa para uniformidade */
-  object-fit: cover; /* Enquadra a imagem: cobre a área, cortando se necessário */
-  border-radius: 12px 12px 0 0; /* Bordas arredondadas no topo, integrando ao card */
+  height: 150px; /* Altura fixa para uniformidade das imagens */
+  object-fit: cover; /* Enquadra a imagem: cobre a área, cortando se necessário, sem distorcer */
+  border-radius: 12px 12px 0 0; /* Bordas arredondadas no topo para um efeito de quadro */
 }
 
 .skills-card .card-body {
   flex-grow: 1; /* Faz o body ocupar o espaço restante */
   overflow: auto; /* Permite rolagem se o texto for muito longo */
   padding: 1rem; /* Mantém o padding padrão do Bootstrap */
-  color: #212529; /* Texto escuro para contraste alto */
+  color: #212529; /* Texto escuro para contraste alto no fundo cinza */
 }
 
 .skills-card .card-title {
-  color: #495057; /* Título em cinza médio-escuro para hierarquia visual */
+  color: #495057; /* Título em cinza médio-escuro para hierarquia visual moderna */
 }
 
-/* Opcional: Ajuste para telas menores */
+/* Ajuste para telas menores */
 @media (max-width: 768px) {
   .skills-card {
-    height: 400px; /* Altura menor em mobile */
+    height: 400px; /* Altura fixa menor em mobile */
     border-radius: 8px; /* Bordas menores em mobile */
   }
   
   .skills-card .card-img-top {
-    height: 120px;
+    height: 120px; /* Altura fixa menor para imagens em mobile */
     border-radius: 8px 8px 0 0;
   }
 }
