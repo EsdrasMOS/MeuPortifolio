@@ -15,7 +15,7 @@ const text = `Olá! Meu nome é Esdras Matheus e sou uma pessoa apaixonada por t
 
   const slideElements = document.querySelectorAll('.slide-up');
   function checkSlide() {
-    const triggerBottom = window.innerHeight * 0.9; // ponto para ativar animação
+    const triggerBottom = window.innerHeight * 0.9;
     slideElements.forEach(el => {
       const boxTop = el.getBoundingClientRect().top;
       if (boxTop < triggerBottom) {
@@ -30,7 +30,30 @@ const text = `Olá! Meu nome é Esdras Matheus e sou uma pessoa apaixonada por t
 
   const carouselElement = document.getElementById('carouselExampleDark');
   const carousel = new bootstrap.Carousel(carouselElement, {
-    interval: 4000, // 4 segundos entre slides
-    pause: 'hover', // pausa ao passar o mouse
+    interval: 4000, 
+    pause: 'hover', 
     ride: 'carousel'
   });
+
+  
+    function toggleInfo(button) {
+      const moreInfo = button.previousElementSibling;
+      if (moreInfo.style.display === 'none') {
+        moreInfo.style.display = 'block';
+        button.textContent = 'Menos';
+      } else {
+        moreInfo.style.display = 'none';
+        button.textContent = 'Saiba Mais';
+      }
+    }
+
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      item.addEventListener('mouseenter', function() {
+        this.querySelector('img').style.transform = 'scale(1.05)';
+        this.querySelector('.overlay').style.opacity = '1';
+      });
+      item.addEventListener('mouseleave', function() {
+        this.querySelector('img').style.transform = 'scale(1)';
+        this.querySelector('.overlay').style.opacity = '0';
+      });
+    });
