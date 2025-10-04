@@ -241,3 +241,103 @@ footer {
     opacity: 0;
   }
 }
+
+.gallery-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #00ffea88;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px #00ffea88;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .gallery-item .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+      color: white;
+      padding: 1rem;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .about-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 25px rgba(0, 255, 234, 0.3) !important;
+    }
+    .text-cyan {
+      color: #00ffea !important;
+    }
+    @media (max-width: 768px) {
+      .gallery-item img {
+        height: 200px;
+      }
+      .about-card {
+        margin-bottom: 1rem;
+      }
+    }
+    .projects-section {
+  background: linear-gradient(135deg, rgba(15, 32, 39, 0.8), rgba(32, 58, 67, 0.8));
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 0 20px #00ffea88;
+  border: 1px solid #00ffea;
+}
+.project-card {
+  background: linear-gradient(135deg, #0f2027, #203a43);
+  color: #00ffea;
+  border: 1px solid #00ffea;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 255, 234, 0.3);
+}
+.project-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+.project-card .card-title {
+  color: #00ffc8;
+  text-shadow: 0 0 5px #00ffc8;
+}
+.project-card .card-text {
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+.project-card .btn-primary {
+  background: linear-gradient(135deg, #00ffea, #00ffa0);
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.project-card .btn-primary:hover {
+  background: linear-gradient(135deg, #00ffa0, #00ffea);
+  box-shadow: 0 4px 10px rgba(0, 255, 234, 0.4);
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 1rem;
+  }
+  .project-card .card-img-top {
+    height: 150px;
+  }
+}

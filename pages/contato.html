@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chié - Contato</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="slide-up">
+    <nav class="navbar navbar-expand-lg" id="main-navbar">
+      <div class="container-fluid px-5">
+        <a class="navbar-brand" href="../index.html">Chié</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="../index.html">Home</a>
+            <a class="nav-link" href="./projetos.html">Projetos</a>
+            <a class="nav-link active" aria-current="page" href="#">Contato</a>
+            <a class="nav-link" href="./sobre.html">Sobre</a>
+            <a class="nav-link" href="./midia.html">Mídias</a>
+            <a class="nav-link" href="./timeline.html">Timeline</a>
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="slide-up pb-5">
+    <div class="container my-5">
+      <h1 class="text-center mb-4" style="color: #00ffc8; text-shadow: 0 0 8px #00ffc8;">Entre em Contato</h1>
+      <p class="text-center mb-5" style="color: #00ffea; font-size: 1.1rem;">
+        Estou sempre aberto a novas oportunidades, colaborações ou simplesmente uma conversa sobre programação e música.
+        Preencha o formulário abaixo ou use os contatos diretos.
+      </p>
+
+      <div class="row g-4">
+        <!--Formulário de Contato-->
+        <div class="col-lg-8">
+          <div class="card contact-card" style="background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); border: 2px solid #00ffea; border-radius: 15px; box-shadow: 0 0 20px #00ffea88;">
+            <div class="card-header" style="color: #00ffc8; font-family: 'Consolas', monospace; font-size: 1.5rem; text-shadow: 0 0 8px #00ffc8;">
+              📝 Envie uma Mensagem
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="mb-3">
+                  <label for="nome" class="form-label" style="color: #00ffea;">Nome Completo</label>
+                  <input type="text" class="form-control" id="nome" placeholder="Seu nome" style="background: rgba(25, 54, 66, 0.8); border: 1px solid #00ffea; color: #ffffff;">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label" style="color: #00ffea;">E-mail</label>
+                  <input type="email" class="form-control" id="email" placeholder="seu@email.com" style="background: rgba(25, 54, 66, 0.8); border: 1px solid #00ffea; color: #ffffff;">
+                </div>
+                <div class="mb-3">
+                  <label for="assunto" class="form-label" style="color: #00ffea;">Assunto</label>
+                  <input type="text" class="form-control" id="assunto" placeholder="O que você quer discutir?" style="background: rgba(25, 54, 66, 0.8); border: 1px solid #00ffea; color: #ffffff;">
+                </div>
+                <div class="mb-3">
+                  <label for="mensagem" class="form-label" style="color: #00ffea;">Mensagem</label>
+                  <textarea class="form-control" id="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." style="background: rgba(25, 54, 66, 0.8); border: 1px solid #00ffea; color: #ffffff; resize: vertical;"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="background: linear-gradient(135deg, #00ffea, #00ffa0); border: none; width: 100%;">Enviar Mensagem</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!--Informações de Contato-->
+        <div class="col-lg-4">
+          <!--E-mail-->
+          <div class="card contact-subcard mb-3 h-100" style="background: #193642; border-radius: 12px; border: 1px solid #00ffea; box-shadow: 0 0 12px #00ffea88;">
+            <div class="card-body text-center">
+              <h5 class="card-title" style="color: #00ffc8;">📧 E-mail</h5>
+              <p class="card-text text-white">esdras.mosilva@gamil.com</p>
+              <a href="mailto:esdras.mosilva@gamil.com" class="btn btn-outline-light" style="border-color: #00ffea; color: #00ffea;">Enviar E-mail</a>
+            </div>
+          </div>
+
+          <!--LinkedIn-->
+          <div class="card contact-subcard mb-3 h-100" style="background: #193642; border-radius: 12px; border: 1px solid #00ffea; box-shadow: 0 0 12px #00ffea88;">
+            <div class="card-body text-center">
+              <h5 class="card-title" style="color: #00ffc8;">💼 LinkedIn</h5>
+              <p class="card-text text-white">Conecte-se comigo</p>
+              <a href="https://www.linkedin.com/in/esdras-matheus-6a94b82bb/" target="_blank" class="btn btn-outline-light" style="border-color: #00ffea; color: #00ffea;">Visitar Perfil</a>
+            </div>
+          </div>
+
+          <!--GitHub-->
+          <div class="card contact-subcard h-100" style="background: #193642; border-radius: 12px; border: 1px solid #00ffea; box-shadow: 0 0 12px #00ffea88;">
+            <div class="card-body text-center">
+              <h5 class="card-title" style="color: #00ffc8;">🐙 GitHub</h5>
+              <p class="card-text text-white">Veja meus repositórios</p>
+              <a href="https://github.com/EsdrasMOS" target="_blank" class="btn btn-outline-light" style="border-color: #00ffea; color: #00ffea;">Visitar GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </main>
+
+  <footer>
+    <nav class="navbar fixed-bottom bg-dark border-bottom border-body" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Chié's Company © Todos os direitos reservados</a>
+      </div>
+    </nav>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script>
+    document.querySelector('form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Mensagem enviada com sucesso!');
+    });
+  </script>
+</body>
+
+</html>
